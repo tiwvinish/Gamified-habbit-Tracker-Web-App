@@ -46,7 +46,7 @@ app.use('/api/leaderboard', leaderboardRoutes);
 
 app.get('/api/test-console', (req, res) => {
   console.log(' CONSOLE TEST WORKS SUCCESSFULLY!');
-  res.json({ message: 'Console test successfully' });
+  res.json({ message: 'Console test done' });
 });
 
 
