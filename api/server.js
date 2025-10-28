@@ -63,7 +63,7 @@ app.get('/api/test-console', (req, res) => {
 
 // Health check route
 app.get('/api/health/', (req, res) => {
-  res.status(200).json({ message: 'Backend is healthy ' });
+  res.status(200).json({ message: 'Backend is healthy !!' });
 });
 
 
@@ -84,5 +84,5 @@ mongoose.connect(process.env.MONGO_URI)
     });
   })
   .catch((err) => {
-    console.error('MongoDB connection error:', err);
+    console.error('MongoDB connection error bhayo :', err);
   });
