@@ -63,7 +63,7 @@ app.get('/api/test-console', (req, res) => {
 
 // Health check route
 app.get('/api/health/', (req, res) => {
-  res.status(200).json({ message: 'Backend is healthy !!' });
+  res.status(200).json({ message: 'Backend is healthy and is functional !!' });
 });
 
 
