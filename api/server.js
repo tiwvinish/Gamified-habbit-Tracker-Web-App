@@ -68,7 +68,7 @@ app.get('/api/health/', (req, res) => {
 
 
 app.get('/', (req, res) => {
-  res.send('MeroHabbit API is running');
+  res.send('MeroHabbit API is running !!');
 });
 
 // Start server
