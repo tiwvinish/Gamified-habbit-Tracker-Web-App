@@ -8,7 +8,7 @@ const calculateLevel = (points) => {
   return Math.floor(points / 200) + 1;
 };
 
-// Get all habits for logged-in user
+// Get all habits for logged-in user and operate
 const getAllHabits = async (req, res) => {
   try {
     const habits = await Habit.find({ user: req.user.id });
