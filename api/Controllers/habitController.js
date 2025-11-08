@@ -3,7 +3,7 @@ const User = require('../models/User');
 const { calculateConsecutiveStreak } = require('../utils/streakCalculator');
 const { recalculateAllStreaks } = require('../recalculateStreaks');
 
-// Helper function to calculate level based on points (200 points per level) and accordingly
+// Helper function to calculate level based on points (200 points per level) and accordingly 
 const calculateLevel = (points) => {
   return Math.floor(points / 200) + 1;
 };
@@ -19,7 +19,7 @@ const getAllHabits = async (req, res) => {
   }
 };
 
-// Get habit by ID
+// Get habit by ID and show
 const getHabitById = async (req, res) => {
   try {
     const habit = await Habit.findById(req.params.id);
