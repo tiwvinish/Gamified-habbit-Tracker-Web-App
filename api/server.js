@@ -26,7 +26,7 @@ app.use(cors({
 
 app.use(express.json());
 
-// Debug middleware to log all request
+// Debug middleware to log all requests
 app.use((req, res, next) => {
   console.log(` ${req.method} ${req.path} - ${new Date().toISOString()}`);
   next();
